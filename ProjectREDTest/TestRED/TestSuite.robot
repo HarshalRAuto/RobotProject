@@ -15,6 +15,10 @@ FirstTest
     [Tags]    sanity
     Log    "Hello World"
     
+SecondTest
+    [Tags]    regression
+    Log    This is second test
+    
 
 FirstSelTest
     Open Browser    https://google.com/    chrome

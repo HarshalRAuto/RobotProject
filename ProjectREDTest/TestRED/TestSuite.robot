@@ -18,7 +18,10 @@ FirstTest
 SecondTest
     [Tags]    regression
     Log    This is second test
-    
+
+ThirdTest
+    [Tags]    regression
+    Log    This is third test    
 
 FirstSelTest
     Open Browser    https://google.com/    chrome

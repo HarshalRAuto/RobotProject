@@ -22,6 +22,10 @@ SecondTest
 ThirdTest
     [Tags]    regression
     Log    This is third test    
+    
+FourthTest
+    [Tags]    regression
+    Log    This is fourth test
 
 FirstSelTest
     Open Browser    https://google.com/    chrome
@@ -41,9 +45,9 @@ FirstLoginTest
     Capture Element Screenshot   id=welcome
     Click Element    //a[@id='menu_time_viewTimeModule']
     Input Text    //input[@id='employee']    Linda Anderson
-    Click Element    //input[@id='btnView']
-    ${CheckMessage}=    Get Text    //div[@class='message warning']  
-    Run Keyword If    '${CheckMessage}' == 'No Timesheets Found'    AddTimeSheet               
+    # Click Element    //input[@id='btnView']
+    # ${CheckMessage}=    Get Text    //div[@class='message warning']  
+    # Run Keyword If    '${CheckMessage}' == 'No Timesheets Found'    AddTimeSheet               
     Click Element    id=welcome    
     Click Element    link=Logout 
     Close Browser   
